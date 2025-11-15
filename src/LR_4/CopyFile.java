@@ -17,24 +17,20 @@ public class CopyFile {
         FileWriter writer = null;
 
         try {
-            // Открытие файлов
             reader = new FileReader(inputFile);
             writer = new FileWriter(outputFile);
 
             int i;
-            // Чтение файлов посимвольно и запись в новый файл
             while ((i = reader.read()) != -1) {
                 writer.write(i);
             }
             return "Successfully written";
 
         } catch (FileNotFoundException e) {
-            // файл не найден
             return "Error: File not found - " + e.getMessage();
         } catch (IOException e) {
-            //ошибка ввода-вывода
             return "Error: I/O exception - " + e.getMessage();
-        } finally { // закрытие файла в любом случае
+        } finally {
             try {
                 if (reader != null) {
                     reader.close();
