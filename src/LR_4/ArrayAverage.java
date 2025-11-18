@@ -3,8 +3,8 @@ package LR_4;
 public class ArrayAverage {
     public static void main(String[] args){
         Object[] arr1 = {1, 2, 3, 4};
-        Object[] arr2 = {};
-        Object[] arr3 = {"1", "2"};
+        Object[] arr2 = {"1", "2"};
+        Object[] arr3 = {};
 
         System.out.println(getAverage(arr1));
         System.out.println(getAverage(arr2));
