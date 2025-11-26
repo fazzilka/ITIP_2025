@@ -1,5 +1,7 @@
 package LR_5;
 
+import com.sun.source.doctree.TextTree;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
@@ -7,11 +9,12 @@ import java.util.regex.PatternSyntaxException;
 public class Main{
     public static void main(String[] args) {
         try{
-            System.out.println(NumberFinder("The1 quic4k b7rown fox jumps over the lazy3 dog"));
-            System.out.println(CorrectPassword("pAssword"));
+            System.out.println(NumberFinder("M1p0shka 1s the b3st su99ort 101"));
+            System.out.println(CorrectPassword("PAssword"));
             System.out.println(CorrectPassword("pA1ssword"));
-            System.out.println(CorrectPassword("psswordddd"));
+            System.out.println(CorrectPassword("psswOrdddd"));
             System.out.println(CorrectPassword("a111111111"));
+            System.out.println(CorrectPassword("1111111111"));
             System.out.println(UppercaseAfterLowercase("aaaWbbzSb"));
             System.out.println(FindWord("Hello my dear friends today IS morning Figma", "f"));
             System.out.println(CorrectIP("1.243.54.0"));
@@ -35,7 +38,7 @@ public class Main{
 
     //№2
     public static String CorrectPassword(String text){
-        Pattern pattern = Pattern.compile("[a-z](?=.*[A-Z])(?=.*[0-9]){8,16}");
+        Pattern pattern = Pattern.compile("[a-z](?=.*[A-Z])(?=.*[0-9]).{8,16}");
         Matcher matcher = pattern.matcher(text);
         if (matcher.find()){
             return "Correct Password\uD83D\uDE18";
@@ -59,7 +62,7 @@ public class Main{
         if (matcher.find()){
             return "Correct IP";
         } else {
-            return "Incorrect IP";
+            return "!!! Incorrect IP !!!";
         }
     }
 
