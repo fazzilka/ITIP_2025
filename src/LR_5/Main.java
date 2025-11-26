@@ -38,9 +38,9 @@ public class Main{
         Pattern pattern = Pattern.compile("[a-z](?=.*[A-Z])(?=.*[0-9]){8,16}");
         Matcher matcher = pattern.matcher(text);
         if (matcher.find()){
-            return "Correct Password";
+            return "Correct Password\uD83D\uDE18";
         } else {
-            return "Incorrect Password!!!";
+            return "!!! Incorrect Password !!!";
         }
     }
 
