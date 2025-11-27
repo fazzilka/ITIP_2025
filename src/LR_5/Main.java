@@ -65,8 +65,8 @@ public class Main{
     }
 
     //№5
-    public static String FindWord(String text, String f) {
-        Pattern pattern = Pattern.compile("(?i)\\b" + f + "\\w*\\b");
+    public static String FindWord(String text, String g) {
+        Pattern pattern = Pattern.compile("(?i)\\b" + g + "\\w*\\b");
         Matcher matcher = pattern.matcher(text);
         String res = "";
         while (matcher.find()){
