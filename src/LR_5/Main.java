@@ -1,7 +1,5 @@
 package LR_5;
 
-import com.sun.source.doctree.TextTree;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
@@ -15,7 +13,7 @@ public class Main{
             System.out.println(CorrectPassword("psswOrdddd"));
             System.out.println(CorrectPassword("a111111111"));
             System.out.println(CorrectPassword("1111111111"));
-            System.out.println(UppercaseAfterLowercase("aaaWbbzSb"));
+            System.out.println(UppercaseAfterLowercase("aaaWbbzSbjjjjjjMMkkkkkkk"));
             System.out.println(FindWord("Hello my dear friends today IS morning Figma", "f"));
             System.out.println(CorrectIP("1.243.54.0"));
             System.out.println(CorrectIP("1.263.54.0"));
@@ -38,7 +36,7 @@ public class Main{
 
     //№2
     public static String CorrectPassword(String text){
-        Pattern pattern = Pattern.compile("[a-z](?=.*[A-Z])(?=.*[0-9]).{8,16}");
+        Pattern pattern = Pattern.compile("^[a-z](?=.*[A-Z])(?=.*\\d)[a-zA-Z0-9]{8,16}$");
         Matcher matcher = pattern.matcher(text);
         if (matcher.find()){
             return "Correct Password\uD83D\uDE18";
