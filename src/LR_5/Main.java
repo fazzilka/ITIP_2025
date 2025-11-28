@@ -7,7 +7,7 @@ import java.util.regex.PatternSyntaxException;
 public class Main{
     public static void main(String[] args) {
         try{
-            System.out.println(NumberFinder("M1p0shka 1s the b3st su99ort 101"));
+            System.out.println(NumberFinder("M1p0shka 1.1s the b3st su99ort 101"));
             System.out.println(CorrectPassword("PAssword"));
             System.out.println(CorrectPassword("pA1ssword"));
             System.out.println(CorrectPassword("psswOrdddd"));
@@ -25,7 +25,7 @@ public class Main{
 
     //№1
     public static String NumberFinder(String text){
-        Pattern pattern = Pattern.compile("\\d+");
+        Pattern pattern = Pattern.compile("\\d+(\\.\\d+)?");
         Matcher matcher = pattern.matcher(text);
         String res = "";
         while (matcher.find()) {
