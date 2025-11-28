@@ -14,7 +14,7 @@ public class Main{
             System.out.println(CorrectPassword("a111111111"));
             System.out.println(CorrectPassword("1111111111"));
             System.out.println(UppercaseAfterLowercase("aaaWbbzSbjjjjjjMMkkkkkkk"));
-            System.out.println(FindWord("Hello my dear friends today IS morning Figma", "f"));
+            System.out.println(FindWord("Hello dear friend this morning is for Backend and DB", "d"));
             System.out.println(CorrectIP("1.243.54.0"));
             System.out.println(CorrectIP("1.263.54.0"));
         }
