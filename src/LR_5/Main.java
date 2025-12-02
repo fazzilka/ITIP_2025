@@ -16,7 +16,7 @@ public class Main{
             System.out.println(UppercaseAfterLowercase("aaaWbbzSbjjjjjjMMkkkkkkk"));
             System.out.println(CorrectIP("1.243.54.0"));
             System.out.println(CorrectIP("1.263.54.0"));
-            System.out.println(FindWord("Hello dear friend this morning is for Backend and DB", "d"));
+            System.out.println(FindWord("Hello dear friend this morning is for Backend and DB!", "d"));
         }
         catch(PatternSyntaxException e){
             System.out.println("Incorrect template syntax"+ e);
