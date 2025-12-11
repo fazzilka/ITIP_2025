@@ -38,10 +38,10 @@ public class Shop {
         Shop shop = new Shop();
 
         System.out.println("Общая сумма продаж: " + shop.getTotalSales());
-        shop.addItem(new Item("6 за 269", 269));
-        shop.addItem(new Item("Огурец", 100));
-        shop.addItem(new Item("Огурец", 120));
-        shop.addItem(new Item("Святой источник", 100));
+        shop.addItem(new Item("5 за 200", 200));
+        shop.addItem(new Item("Кофе", 100));
+        shop.addItem(new Item("Tasty Coffee", 120));
+        shop.addItem(new Item("Байкал", 100));
         System.out.println("Общая сумма продаж: " + shop.getTotalSales());
         System.out.println("Самый популярный предмет: " + shop.getMostPopularItem());
         shop.showItems();
