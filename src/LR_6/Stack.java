@@ -11,7 +11,9 @@ public class Stack<T> {
     }
     public void push(T element) {
         if (size == data.length) {
-            return;
+            throw new IllegalStateException(
+                    "Stack overflow: попытка добавить элемент в полный стек (capacity = " + data.length + ")"
+            );
         }
         data[size++] = element;
     }
@@ -39,7 +41,7 @@ public class Stack<T> {
         stack.push("Oracle");
         stack.push("Oracle");
         stack.push("Oracle");
-        stack.push("Oracle");
+        // stack.push("Oracle");
         System.out.println(stack.size);
         stack.pop();
         System.out.println(stack.size);
