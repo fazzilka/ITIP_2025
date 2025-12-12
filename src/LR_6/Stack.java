@@ -27,7 +27,8 @@ public class Stack<T> {
         return removedItem;
     }
     public T peek() {
-        if (size == 0) return null;
+        if (size == 0)
+            return null;
         return data[size - 1];
     }
 
