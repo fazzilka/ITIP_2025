@@ -37,10 +37,10 @@ public class Stack<T> {
         stack.push("Oracle");
         System.out.println(stack.size);
         System.out.println(stack.peek());
-        stack.push("Oracle");
-        stack.push("Oracle");
-        stack.push("Oracle");
-        stack.push("Oracle");
+        stack.push("JRE");
+        stack.push("JVM");
+        stack.push("Red Bull");
+        stack.push("java");
         // stack.push("Oracle");
         System.out.println(stack.size);
         stack.pop();
