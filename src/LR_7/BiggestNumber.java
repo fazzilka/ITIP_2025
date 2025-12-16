@@ -16,7 +16,7 @@ public class BiggestNumber {
         @Override
         public void run() {
             max = findMaxInRow(row);
-            System.out.println("Максимум в строке " + rowIndex + ": " + max);
+            System.out.println("Максимум в строке " + rowIndex + " -> " + max);
         }
 
         public int getMax() {
@@ -53,7 +53,7 @@ public class BiggestNumber {
         }
 
         int overallMax = findMaxInRow(maxInRows);
-        System.out.println("Наибольший элемент в матрице: " + overallMax + " \nДлина матрицы: " + rows);
+        System.out.println("Наибольший элемент в матрице -> " + overallMax + " \nДлина матрицы -> " + rows);
     }
 
     public static int findMaxInRow(int[] row) {
