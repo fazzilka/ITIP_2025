@@ -59,8 +59,8 @@ public class Warehouses {
                     }
 
                     if (totalWeight > 0) {
-                        System.out.println(name + " загрузил: " + itemsToLoad + "общим весом " + totalWeight + " кг.");
-                        System.out.println(name + " отправляется на разгрузку...");
+                        System.out.println(name + " загрузил -> " + itemsToLoad + "общим весом " + totalWeight + " кг.");
+                        System.out.println(name + " отправляется на разгрузку........");
                         Thread.sleep(2000);
                         System.out.println(name + " вернулся на склад.");
                     }
