@@ -5,7 +5,7 @@ import java.util.concurrent.Semaphore;
 public class Warehouses {
     private static final int MAX_WEIGHT = 150;
     private static final Semaphore semaphore = new Semaphore(3);
-    private static int[] items = {50, 20, 30, 40, 10, 60, 70, 80, 90, 30};
+    private static int[] items = {10, 20, 30, 40, 50, 60, 70, 80, 90, 30};
     private static int currentIndex = 0;
     private static final Object lock = new Object();
 
